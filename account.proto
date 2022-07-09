@@ -1,9 +1,27 @@
 syntax = "proto3";
 
+enum EyeColor {
+    EYE_COLOR_UNSPECIFIED = 0;
+    EYE_COLOR_BLUE = 1;
+    EYE_COLOR_GREEN = 2;
+    EYE_COLOR_BROWN = 3;
+}
+
+/*
+ * Account is a message type
+ * for identyfying a user
+ */ 
+ 
+
 message Account {
     uint32 id = 1;
     string name = 2;
-    bytes thumbnail = 3;
+    bytes thumbnail = 3; // for image data .jpg, .png, .jpeg format
     bool is_verified = 4;
+
+    // height in cm
     float height = 5;
+
+    repeated string phone = 6;
+    EyeColor eye_color = 7;
 }
