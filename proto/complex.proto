@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package grpc.complex;
+
+option go_package = "github.com/rafiul/protobuf-grpc/proto";
+
+message Account {
+  int32 id = 1;
+  string name = 2;
+}
+
+message Complex {
+  Account one_dummy = 2;
+  repeated Account multiple_dummies = 3;
+}
+message Compound {
+  Account one_dummy = 2;
+  repeated Account multiple_dummies = 3;
+}

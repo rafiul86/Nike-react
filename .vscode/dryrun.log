@@ -1,0 +1,7 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'c:/projects/protobuf-grpc'
+ 
+protoc -Iproto --go_opt=module=github.com/rafiul86/protobuf-grpc --go_out=. proto/*.proto
+go build -o protobuf-grpc .
+make: Leaving directory 'c:/projects/protobuf-grpc'
+ 

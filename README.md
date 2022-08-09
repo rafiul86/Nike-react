@@ -223,3 +223,50 @@ Rafiul Hasan - [Linkedin](https://www.linkedin.com/in/hrafiul/)
 Project Link: [https://github.com/rafiul86/Name-Registry-Smart-Contract](https://github.com/rafiul86/Name-Registry-Smart-Contract)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+
+
+
+
+
+
+########################################################################
+
+
+#### `Linux/MacOS`
+
+```shell
+go mod tidy
+make
+```
+
+#### `Windows - Chocolatey`
+```shell
+choco install make
+go mod tidy
+make
+```
+
+#### `Windows - Without Chocolatey`
+
+```shell
+protoc -Iproto --go_opt=module=github.com/Clement-Jean/proto-go-course --go_out=. proto/*.proto
+
+go mod tidy
+go build -o proto-go-course.exe .
+```
+
+## Run
+
+```
+./proto-go-course
+```
+
+or
+
+```
+./proto-go-course.exe
+```

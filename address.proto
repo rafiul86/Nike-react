@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package address;
-
-import "account.proto";
-
-message Address {
-    account.Account account = 1;
-}
