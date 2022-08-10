@@ -8,13 +8,38 @@
 
 # Usage: ./construct.sh
 
-read -s -t 10 -p "Enter Name:" name
-read -s -t 10 -p "Enter Age:" age
-read -s -t 10 -p "Enter city:" city
-
-echo "Your name is $name, age is $age, city is $city"
-
-select day in sat sun mon tue wed thu fri; do
-    echo "You selected $day"
-    break
+read -p "Enter the name of the city: " city
+select city in "Dhaka" "Chittagong" "Rajshahi" "Khulna" "Barisal" "Sylhet" "Rangpur"
+do
+    case "$city" in
+        "Dhaka")
+            echo "Dhaka"
+            break
+            ;;
+        "Chittagong")
+            echo "Chittagong"
+            break
+            ;;
+        "Rajshahi")
+            echo "Rajshahi"
+            break
+            ;;
+        "Khulna")
+            echo "Khulna"
+            break
+            ;;
+        "Barisal")
+            echo "Barisal"
+            break
+            ;;
+        "Sylhet")
+            echo "Sylhet"
+            break
+            ;;
+        "Rangpur")
+            echo "Rangpur"
+            break
+            ;;
+        *) echo "Invalid city";;
+    esac
 done
